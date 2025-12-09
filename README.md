@@ -68,51 +68,45 @@ checks: ['rate > 0.95'],
 
 ▶️ How to Run
 k6 run user_register.js
-=======
-🚀 Testes de Carga com K6 — Login com Usuários via CSV
+_______________________________________________________________________________
 
-Este repositório contém um conjunto de scripts para realizar testes de performance, carga e estresse utilizando o k6.
-Os testes simulam múltiplos usuários realizando login na API a partir de um arquivo CSV.
+🚀 Load Testing with K6 — User Login via CSV
 
-📌 Objetivos do Projeto
+This repository contains a set of scripts to perform performance, load, and stress tests using k6.
+The tests simulate multiple users logging into an API using data from a CSV file.
 
-Validar tempo de resposta da API
+📌 Project Objectives
 
-Avaliar comportamento sob diferentes níveis de carga
+Validate the API response time
 
-Medir estabilidade, resiliência e taxa de erros
+Evaluate behavior under different load levels
 
-Simular usuários reais usando dados do arquivo usuarios.csv
+Measure stability, resilience, and error rates
 
-📁 Estrutura do Projeto
+Simulate real users using data from usuarios.csv
 
-├── script.js          # Teste básico
+📁 Project Structure
+├── script.js          # Basic test
+├── script_1.js        # Test variation
+├── stress_test.js     # Stress test
+├── usuarios.csv       # User list for the test
+├── dados.json         # Additional data
+└── README.md          # Project documentation
 
-├── script_1.js        # Variação de teste
+🛠️ Requirements
 
-├── stress_test.js     # Teste de estresse
+Install k6 → https://k6.io/docs/getting-started/installation/
 
-├── usuarios.csv       # Lista de usuários usados no teste
+Node.js is NOT required (k6 runs scripts directly)
 
-├── dados.json         # Dados complementares
+The file usuarios.csv must be in the same directory as the script
 
-└── README.md          # Documentação do projeto
+▶️ How to Run
+k6 run "file_name.js"
 
-🛠️ Requisitos:
+📈 Example of K6 Output
 
-Instalar o k6 → https://k6.io/docs/getting-started/installation/
-
-Node NÃO é necessário (k6 executa os scripts diretamente)
-
-Arquivo usuarios.csv deve estar no mesmo diretório do script
-
-▶️ Como Executar:
-
-k6 run "nome_do_arquivo"
-
-📈 Exemplo de Saída do K6
-
-Você verá métricas como:
+You will see metrics such as:
 
 http_req_duration
 
@@ -120,19 +114,16 @@ http_req_failed
 
 iteration_rate
 
-vus e vus_max
+vus and vus_max
 
-🤝 Contribuições:
+🤝 Contributions
 
-Sugestões e melhorias são sempre bem-vindas!
+Suggestions and improvements are always welcome!
+Feel free to open an issue or submit a pull request.
 
-Abra uma issue ou envie um pull request.
-
-💬 Autor:
+💬 Author
 
 Douglas Tavares
+QA / Test Analyst
 
-Analista de Testes / QA
-
-🔗 Linkedin: https://www.linkedin.com/in/douglas-tavares-02127567/
->>>>>>> 4b6b369b5384a621aac88ebc3871d3a898efe3db
+🔗 LinkedIn: https://www.linkedin.com/in/douglas-tavares-02127567/
