@@ -1,9 +1,14 @@
-# >>> stress_test <<<
-# Teste de Carga com k6 – Login com Usuários de CSV
-Este projeto utiliza o k6 para realizar um teste de carga no endpoint de login da API `test-api.k6.io`, simulando usuários reais carregados a partir de um arquivo CSV. O objetivo é validar performance, estabilidade e taxa de erros da API sob diferentes níveis de carga.
----
-## 📌 Requisitos
-Antes de rodar o teste, instale:
-- **k6** → https://k6.io/docs/getting-started/installation/
-- Node NÃO é necessário (o k6 roda o script diretamente)
-- Arquivo `usuarios.csv` no mesmo diretório do script
+🚀 Testes de Carga com K6 — Login com Usuários via CSV
+
+Este repositório contém um conjunto de scripts para realizar testes de performance, carga e estresse utilizando o k6.
+Os testes simulam múltiplos usuários realizando login na API a partir de um arquivo CSV.
+
+📌 Objetivos do Projeto
+
+Validar tempo de resposta da API
+
+Avaliar comportamento sob diferentes níveis de carga
+
+Medir estabilidade, resiliência e taxa de erros
+
+Simular usuários reais usando dados do arquivo usuarios.csv
