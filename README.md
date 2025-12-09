@@ -63,4 +63,4 @@ Douglas Tavares
 
 Analista de Testes / QA
 
-🔗 GitHub: https://github.com/douglastavares2702
+🔗 Linkedin: https://www.linkedin.com/in/douglas-tavares-02127567/
